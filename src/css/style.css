@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body_completo{
+    width: 100vw;
+    height: 100vh;
+    
+}
+.escritorio {
+    height: 95%;
+    width: 100%;
+    background-image: url("../images/fondo.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.barra_inferior{
+    height: 5%;
+    width: 100%;
+    background-color: rgba(220, 228, 245, 0.8);
+}

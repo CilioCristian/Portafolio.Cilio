@@ -1,0 +1,30 @@
+/*base*/
+@use "base/reset";
+@use "base/variables";
+/*escritorio*/
+@use "escritorio/escritorio";
+@use "escritorio/iconos";
+/*barra inferior*/
+@use "barra_inferior/barra-central";
+@use "barra_inferior/barra-izquierda";
+@use "barra_inferior/barra-derecha";
+@use "barra_inferior/barra-completa";
+/*ventanas*/
+@use "ventanas/ventana";
+@use "ventanas/chrome";
+@use "ventanas/explorador";
+@use "ventanas/cv";
+/*utilidades*/
+@use "utilidades/animaciones";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body_completo{
+    width: 100vw;
+    height: 100vh;
+    
+}

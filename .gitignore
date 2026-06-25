@@ -1,0 +1,13 @@
+arrancar sass:
+sass --watch  src/scss/style.scss  src/css/style.css
+# Dependencias
+node_modules/
+
+# Archivos generados
+dist/
+
+# Variables de entorno
+.env
+
+# Logs
+*.log

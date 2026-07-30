@@ -1,0 +1,96 @@
+.barra_inferior_central{
+    display: flex ;    
+     flex : 1;
+     height: 80%;
+    border: 1px solid blue;
+    align-items: center;
+}
+/*PRIMER BOTON *//*PRIMER BOTON *//*PRIMER BOTON *//*PRIMER BOTON *//*PRIMER BOTON */
+.boton-windows{
+    height: 100%;
+}
+.boton-windows img{
+    height: 100%;
+    width: auto;
+}
+/*SEGUNDO BOTON *//*SEGUNDO BOTON *//*SEGUNDO BOTON *//*SEGUNDO BOTON *//*SEGUNDO BOTON */
+
+/*CONTENEDOR BOTON_BUSQUEDA *//*CONTENEDOR BOTON_BUSQUEDA */
+.boton_busqueda{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 260px;
+    border-radius: 999px;
+}
+/*PRIMERA PARTE DEL BOTON *//*PRIMERA PARTE DEL BOTON */
+.busqueda_lupa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 100%;
+}
+.busqueda_lupa img{
+    height: 150%;
+    width: 120%;
+}
+/*SEGUNDA PARTE DEL BOTON *//*SEGUNDA PARTE DEL BOTON */
+.busqueda_texto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+     height: 100%;
+}
+/*TERCERA PARTE DEL BOTON *//*TERCERA PARTE DEL BOTON */
+.busqueda_tigre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}
+.busqueda_tigre img{
+    height: 110%;
+    width: 110%;
+
+}
+/*TERCER BOTON, EL DE CHROME*//*TERCER BOTON, EL DE CHROME*/
+.boton-chrome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50px;
+}
+.boton-chrome img{
+    height: 100%;
+    width: auto;
+
+}
+/*CUARTO BOTON, EL DE CARPETA*//*CUARTO BOTON, EL DE CARPETA*/
+.boton-carpeta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50px;
+
+}
+.boton-carpeta img{
+    height: 100%;
+    width: auto;
+}
+/*QUINTO BOTON, EL DE COPILOT*/
+.boton-copilot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50px;
+}
+.boton-copilot img{
+    height: 100%;
+    width: auto;
+}

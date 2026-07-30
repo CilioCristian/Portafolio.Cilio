@@ -1,0 +1,155 @@
+/*base*/
+/*escritorio*/
+.escritorio {
+  width: 100%;
+  height: calc(100vh - 48px);
+  background-image: url("../images/fondooscuro.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/*barra inferior*/
+.barra_inferior_central {
+  display: flex;
+  flex: 1;
+  height: 80%;
+  border: 1px solid blue;
+  align-items: center;
+}
+
+/*PRIMER BOTON */ /*PRIMER BOTON */ /*PRIMER BOTON */ /*PRIMER BOTON */ /*PRIMER BOTON */
+.boton-windows {
+  height: 100%;
+}
+
+.boton-windows img {
+  height: 100%;
+  width: auto;
+}
+
+/*SEGUNDO BOTON */ /*SEGUNDO BOTON */ /*SEGUNDO BOTON */ /*SEGUNDO BOTON */ /*SEGUNDO BOTON */
+/*CONTENEDOR BOTON_BUSQUEDA */ /*CONTENEDOR BOTON_BUSQUEDA */
+.boton_busqueda {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 260px;
+  border-radius: 999px;
+}
+
+/*PRIMERA PARTE DEL BOTON */ /*PRIMERA PARTE DEL BOTON */
+.busqueda_lupa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 100%;
+}
+
+.busqueda_lupa img {
+  height: 150%;
+  width: 120%;
+}
+
+/*SEGUNDA PARTE DEL BOTON */ /*SEGUNDA PARTE DEL BOTON */
+.busqueda_texto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  height: 100%;
+}
+
+/*TERCERA PARTE DEL BOTON */ /*TERCERA PARTE DEL BOTON */
+.busqueda_tigre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.busqueda_tigre img {
+  height: 110%;
+  width: 110%;
+}
+
+/*TERCER BOTON, EL DE CHROME*/ /*TERCER BOTON, EL DE CHROME*/
+.boton-chrome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 50px;
+}
+
+.boton-chrome img {
+  height: 100%;
+  width: auto;
+}
+
+/*CUARTO BOTON, EL DE CARPETA*/ /*CUARTO BOTON, EL DE CARPETA*/
+.boton-carpeta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 50px;
+}
+
+.boton-carpeta img {
+  height: 100%;
+  width: auto;
+}
+
+/*QUINTO BOTON, EL DE COPILOT*/
+.boton-copilot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 50px;
+}
+
+.boton-copilot img {
+  height: 100%;
+  width: auto;
+}
+
+.barra_inferior_izquierda {
+  display: flex;
+  height: 80%;
+  flex: 1;
+  border: 1px solid red;
+}
+
+.barra_inferior_derecha {
+  display: flex;
+  flex: 1;
+  height: 80%;
+  border: 1px solid green;
+}
+
+.barra_inferior {
+  display: flex;
+  width: 100%;
+  height: 6vh;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(220, 228, 245, 0.8);
+}
+
+/*ventanas*/
+/*utilidades*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.windows_body {
+  width: 100vw;
+  height: 100vh;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,30 @@
+/*base*/
+@use "base/reset";
+@use "base/variables";
+/*escritorio*/
+@use "escritorio/escritorio";
+@use "escritorio/iconos";
+/*barra inferior*/
+@use "barra_inferior/barra-inferior-central";
+@use "barra_inferior/barra-inferior-izquierda";
+@use "barra_inferior/barra-inferior-derecha";
+@use "barra_inferior/barra-inferior";
+/*ventanas*/
+@use "ventanas/ventana";
+@use "ventanas/chrome";
+@use "ventanas/explorador";
+@use "ventanas/cv";
+/*utilidades*/
+@use "utilidades/animaciones";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.windows_body{
+    width: 100vw;
+    height: 100vh;
+    
+}

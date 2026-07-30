@@ -1,0 +1,97 @@
+antes de empezar a programar:
+iniciamos node_modules :
+npm run
+instalamos sass:
+npm install -D sass
+arrancar sass:
+npm run sass
+sass --watch  src/scss/style.scss  src/css/style.css
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Etapa 1 - HTML + SCSS (ahora)
+
+El objetivo es dejar una réplica visual de Windows 11.
+
+Nada de JavaScript todavía.
+
+Vamos a construir todos los componentes:
+
+ Escritorio
+ Barra de tareas
+ Menú Inicio
+ Buscador
+ Explorador
+ Chrome
+ Papelera
+ Centro de notificaciones
+ Calendario
+ Animaciones CSS
+
+Aunque no funcionen, tienen que verse igual que Windows.
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Etapa 2 - JavaScript
+
+Una vez que todo esté maquetado:
+
+Abrir y cerrar el menú Inicio.
+Abrir el buscador.
+Abrir ventanas.
+Minimizar.
+Maximizar.
+Cerrar.
+Arrastrar ventanas.
+Actualizar el reloj.
+Navegar entre secciones.
+
+Ahí recién empezamos con la lógica.
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Etapa 3 - React
+
+Acá haríamos una refactorización.
+
+En vez de tener un HTML enorme, cada pieza pasa a ser un componente.
+
+Por ejemplo:
+
+src/
+│
+├── components/
+│   ├── Taskbar/
+│   ├── StartMenu/
+│   ├── Search/
+│   ├── Explorer/
+│   ├── Chrome/
+│   ├── Desktop/
+│   ├── Clock/
+│   └── NotificationCenter/
+│
+├── pages/
+│
+└── App.jsx
+
+Y ahí React realmente aporta valor, porque vas a manejar el estado de las ventanas, qué está abierto, qué está minimizado, etc.
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Etapa 4 - Backend (solo si hace falta)
+
+Acá me haría una pregunta:
+
+¿Qué necesita guardar este portfolio?
+
+Si solo muestra información (Sobre mí, proyectos, contacto), no necesitás backend.
+
+Pero si querés agregar cosas como:
+
+Formulario de contacto.
+Panel de administración para subir proyectos.
+Base de datos con proyectos.
+Sistema de autenticación.
+Contador de visitas.
+Blog.
+
+Ahí sí tendría sentido.
+
+Yo usaría algo como:
+
+Node.js + Express.
+PostgreSQL o MongoDB.
+Prisma (si elegís SQL).

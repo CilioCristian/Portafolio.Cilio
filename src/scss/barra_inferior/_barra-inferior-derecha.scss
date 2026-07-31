@@ -1,6 +1,19 @@
-.barra_inferior_derecha{
-    display: flex ;
-     flex : 1;
-     height: 80%;
+.barra_inferior_derecha {
+    justify-content: flex-end;
+    padding-right: 15px;
     border: 1px solid green;
+}
+.iconos_sistema {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-right: 15px;
+}
+.fecha_hora {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+.idioma{
+    padding-right: 15px;
 }

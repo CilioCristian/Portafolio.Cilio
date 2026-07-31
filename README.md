@@ -1,11 +1,89 @@
-antes de empezar a programar:
-iniciamos node_modules :
-npm run
-instalamos sass:
-npm install -D sass
-arrancar sass:
+# Portafolio.Cilio
+## Clonar el proyecto
+> **Importante:** No descargar el proyecto como ZIP. Siempre clonar el repositorio para conservar el historial de Git.
+```bash
+git clone https://github.com/CilioCristian/Portafolio.Cilio.git
+```
+Entrar a la carpeta:
+```bash
+cd Portafolio.Cilio
+```
+Verificar la rama:
+```bash
+git branch
+```
+Debe mostrar:
+```text
+* main
+```
+---
+# Instalar dependencias
+Instalar todas las dependencias del proyecto:
+```bash
+npm install
+```
+Esto generará automáticamente la carpeta `node_modules`.
+---
+# Ejecutar Sass
+Si el proyecto utiliza el script configurado en `package.json`:
+```bash
 npm run sass
-sass --watch  src/scss/style.scss  src/css/style.css
+```
+---
+# Verificar el estado del repositorio
+```bash
+git status
+```
+Debe indicar:
+```text
+On branch main
+Your branch is up to date with 'origin/main'.
+nothing to commit, working tree clean
+```
+---
+# Flujo de trabajo diario
+Traer los últimos cambios antes de empezar:
+```bash
+git pull
+```
+---
+Guardar los cambios realizados:
+```bash
+git add .
+git commit -m "Descripción de los cambios"
+git push
+```
+Ejemplo:
+```bash
+git add .
+git commit -m "Agrego nueva sección de proyectos"
+git push
+```
+---
+# Estructura del proyecto
+```text
+Portafolio.Cilio/
+│
+├── src/
+│   ├── css/
+│   ├── images/
+│   └── scss/
+│
+├── index.html
+├── package.json
+├── package-lock.json
+├── .gitignore
+└── README.md
+```
+---
+# Buenas prácticas
+* ✅ Clonar siempre el repositorio con `git clone`.
+* ❌ No utilizar **Download ZIP**.
+* ✅ Ejecutar `npm install` después de clonar el proyecto.
+* ✅ Hacer `git pull` antes de comenzar a trabajar.
+* ✅ Realizar `git push` cuando finalices tus cambios.
+* ❌ No subir la carpeta `node_modules`.
+* ❌ No modificar el archivo `.gitignore` sin necesidad.
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 Etapa 1 - HTML + SCSS (ahora)
@@ -16,7 +94,7 @@ Nada de JavaScript todavía.
 
 Vamos a construir todos los componentes:
 
- Escritorio
+ Escritorio✅
  Barra de tareas
  Menú Inicio
  Buscador
@@ -95,3 +173,14 @@ Yo usaría algo como:
 Node.js + Express.
 PostgreSQL o MongoDB.
 Prisma (si elegís SQL).
+//////////////////////////////////////////////////////////////////////////////////////////
+Un consejo que te va a servir mucho
+
+A partir de ahora, cada vez que tengas que elegir entre vh y px, preguntate:
+
+¿Estoy construyendo una página web adaptable o estoy copiando una interfaz específica?
+
+🌍 Página web → rem, %, vh, vw.
+🖥️ Interfaz tipo Windows → px en la mayoría de los casos.
+
+Con esa regla vas a tomar decisiones mucho más fáciles.

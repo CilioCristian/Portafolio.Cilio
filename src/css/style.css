@@ -2,16 +2,48 @@
 /*escritorio*/
 .escritorio {
   width: 100%;
-  height: calc(100vh - 48px);
+  height: calc(100vh - 40px);
   background-image: url("../images/fondooscuro.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
+.iconos_escritorio {
+  display: grid;
+  grid-template-columns: 80px;
+  gap: 10px;
+  padding: 10px;
+}
+
+.boton_escritorio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.boton_escritorio img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+}
+
+.boton_escritorio span {
+  margin-top: 5px;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+}
+
 /*barra inferior*/
 .barra_inferior_central {
-  border: 1px solid blue;
   padding-left: 10px;
   padding-right: 10px;
   gap: 12px;
@@ -116,14 +148,42 @@
 }
 
 .barra_inferior_izquierda {
-  padding-left: 10px;
-  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.barra_inferior_izquierda .clima {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 12px;
+  height: 100%;
+}
+.barra_inferior_izquierda .clima__icono {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+.barra_inferior_izquierda .clima__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.barra_inferior_izquierda .clima__temperatura {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.1;
+}
+.barra_inferior_izquierda .clima__descripcion {
+  color: #fff;
+  font-size: 11px;
+  line-height: 1.1;
 }
 
 .barra_inferior_derecha {
   justify-content: flex-end;
   padding-right: 15px;
-  border: 1px solid green;
 }
 
 .iconos_sistema {
@@ -137,10 +197,18 @@
   display: flex;
   align-items: flex-end;
   flex-direction: column;
+  font-size: 14px;
+  padding-left: 15px;
 }
 
 .idioma {
   padding-right: 15px;
+}
+
+.icono_audio img,
+.icono_wifi img {
+  padding-right: 5px;
+  height: 20px;
 }
 
 .barra_inferior {
@@ -148,8 +216,8 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  height: 48px;
-  background-color: rgba(30, 30, 30, 0.7);
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.87);
   backdrop-filter: blur(15px);
   border-top: 1px solid rgba(255, 255, 255, 0.12);
   box-shadow: 0 -1px 8px rgba(0, 0, 0, 0.15);
@@ -157,6 +225,7 @@
   bottom: 0;
   left: 0;
   z-index: 1000;
+  color: #fff;
 }
 
 .barra_inferior_izquierda,
@@ -186,6 +255,12 @@
 .boton-carpeta:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
+.boton-windows:active,
+.boton-copilot:active,
+.boton-chrome:active,
+.boton-carpeta:active {
+  transform: scale(0.97);
+}
 
 .boton_busqueda {
   border: none;
@@ -194,9 +269,71 @@
 .boton_busqueda:hover {
   background-color: rgba(240, 240, 240, 0.8);
 }
+.boton_busqueda:active {
+  transform: scale(0.97);
+}
 
 /*ventanas*/
 /*utilidades*/
+/*menu inicio*/
+.menu_inicio {
+  position: fixed;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  width: 750px;
+  height: 550px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+  z-index: 900;
+}
+
+.menu_inicio_principal {
+  width: 70%;
+  height: 100%;
+  background-color: rgba(32, 32, 32, 0.9);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+}
+
+.menu_inicio_lateral {
+  width: 30%;
+  height: 100%;
+  background-color: rgba(25, 25, 25, 0.95);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+}
+
+.menu_inicio_busqueda {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  height: 40px;
+  margin: 25px auto 0;
+  padding: 0 15px;
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  color: white;
+}
+
+.menu_inicio_busqueda i {
+  margin-right: 12px;
+}
+
+.menu_inicio_busqueda span {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.menu_inicio_apps {
+  width: 100%;
+  padding: 25px;
+}
+
 * {
   margin: 0;
   padding: 0;

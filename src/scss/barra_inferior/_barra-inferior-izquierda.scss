@@ -1,5 +1,38 @@
-.barra_inferior_izquierda{
-    padding-left: 10px;
-    border: 1px solid red;
-    
+.barra_inferior_izquierda {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    .clima {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 0 12px;
+        height: 100%;
+
+        &__icono {
+            width: 32px;
+            height: 32px;
+            object-fit: contain;
+        }
+
+        &__info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        &__temperatura {
+            color: #fff;
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 1.1;
+        }
+
+        &__descripcion {
+            color: #fff;
+            font-size: 11px;
+            line-height: 1.1;
+        }
+    }
 }

@@ -19,7 +19,8 @@ Debe mostrar:
 ---
 # Docker provee instrucciones dedicadas para cada sistema operativo.
 # Por favor consulta la documentación oficial en https://www.docker.com/get-started/
-
+# escuchar a sass
+npx sass --watch src/scss/style.scss src/css/style.css
 # Descarga la imagen de Docker de Node.js:
 docker pull node:24-alpine
 

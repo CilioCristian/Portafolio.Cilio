@@ -17,6 +17,21 @@ Debe mostrar:
 * main
 ```
 ---
+# Docker provee instrucciones dedicadas para cada sistema operativo.
+# Por favor consulta la documentación oficial en https://www.docker.com/get-started/
+
+# Descarga la imagen de Docker de Node.js:
+docker pull node:24-alpine
+
+# Crea un contenedor de Node.js e inicia una sesión shell:
+docker run -it --rm --entrypoint sh node:24-alpine
+
+# Verifica la versión de Node.js:
+node -v # Debería mostrar "v24.19.0".
+
+# Verifica versión de npm:
+npm -v # Debería mostrar "11.17.0".
+
 # Instalar dependencias
 Instalar todas las dependencias del proyecto:
 ```bash

@@ -4,5 +4,8 @@
   },
   "devDependencies": {
     "sass": "^1.101.3"
+  },
+  "dependencies": {
+    "animate.css": "^4.1.1"
   }
 }

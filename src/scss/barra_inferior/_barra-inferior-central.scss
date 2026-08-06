@@ -1,163 +1,131 @@
 // ==========================================
 // BARRA INFERIOR CENTRAL
 // ==========================================
-
 .barra_inferior_central {
     padding-left: 10px;
     padding-right: 10px;
     gap: 12px;
 }
-
-
 // ==========================================
 // WINDOWS
 // ==========================================
-
 .boton-windows {
     display: flex;
     justify-content: center;
     align-items: center;
-
     width: 50px;
     height: 90%;
-
     background: transparent;
     border: none;
     border-radius: 5px;
-
     cursor: pointer;
-
     transition: background-color 0.15s ease;
-
     &:hover {
         background-color: rgba(255, 255, 255, 0.10);
     }
 }
-
+// ==========================================
+//WINDOWS IMG
+// ==========================================
 .boton-windows img {
     height: 80%;
     width: auto;
-
     object-fit: contain;
 }
-
-
 // ==========================================
 // BUSCADOR
 // ==========================================
-
 .boton_busqueda {
     display: flex;
     align-items: center;
-
-    width: 260px;
-    height: 90%;
-
+    width: 210px;
+    height: 30px;
     background-color: white;
     border-radius: 999px;
-
-    cursor: pointer;
-
-    transition: background-color 0.15s ease;
-
-    &:hover {
-        background-color: #f0f0f0;
-    }
+    overflow: hidden;
 }
-
-
+// ==========================================
 // LUPA
-
+// ==========================================
 .busqueda_lupa {
     display: flex;
     justify-content: center;
     align-items: center;
-
     width: 40px;
     height: 100%;
+    flex-shrink: 0;
 }
-
+// ==========================================
+// LUPA IMG
+// ==========================================
 .busqueda_lupa img {
-    width: 20px;
-    height: 20px;
-
+    width: 40px;
+    height: 40px;
     object-fit: contain;
 }
-
-
-// TEXTO SEARCH
-
+// ==========================================
+// TEXTO
+// ==========================================
 .busqueda_texto {
     display: flex;
     align-items: center;
-
     flex: 1;
     height: 100%;
 }
-
+// ==========================================
+// TEXTO SPAN
+// ==========================================
 .busqueda_texto span {
     font-size: 14px;
-    color: #202020;
+    color: #555;
 }
-
-
+// ==========================================
 // TIGRE
-
+// ==========================================
 .busqueda_tigre {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    width: 40px;
+    width: 60px;
     height: 100%;
+    flex-shrink: 0;
 }
-
+// ==========================================
+// TIGRE IMG
+// ==========================================
 .busqueda_tigre img {
-    width: 24px;
-    height: 24px;
-
+    width: 55px;
+    height: 38px;
     object-fit: contain;
 }
-
-
 // ==========================================
 // BOTONES DE APLICACIONES
 // Chrome + Carpeta + Copilot
 // ==========================================
-
 .boton-chrome,
 .boton-carpeta,
 .boton-copilot {
     display: flex;
     justify-content: center;
     align-items: center;
-
     width: 50px;
     height: 90%;
-
     background: transparent;
     border: none;
     border-radius: 5px;
-
     cursor: pointer;
-
     transition: background-color 0.15s ease;
-
     &:hover {
         background-color: rgba(255, 255, 255, 0.10);
     }
 }
-
-
 // ==========================================
 // IMÁGENES DE APLICACIONES
 // ==========================================
-
 .boton-chrome img,
 .boton-carpeta img,
 .boton-copilot img {
     height: 80%;
     width: auto;
-
     object-fit: contain;
 }

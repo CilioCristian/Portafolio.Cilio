@@ -1,0 +1,72 @@
+// ==============================
+// TÍTULO "PINNED"
+// ==============================
+.menu_inicio_titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    h3 {
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    span {
+        color: white;
+        font-size: 14px;
+        cursor: pointer;
+    }
+}
+// ==============================
+// GRID DE ICONOS
+// ==============================
+.apps_grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    row-gap: 25px;
+    column-gap: 10px;
+}
+// ==============================
+// CADA ICONO
+// ==============================
+.app_inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    //min-width: 0;
+    width: 85px;
+    height: 85px;
+    padding: 8px 4px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.08);
+    }
+}
+// IMAGEN
+.app_inicio img {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+}
+// NOMBRE
+.app_inicio span {
+    width: 100%;
+    margin-top: 7px;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+//contenido
+.menu_inicio_contenido {
+    height: calc(100% - 90px);
+    margin-top: 20px;
+    padding: 0 40px 30px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}

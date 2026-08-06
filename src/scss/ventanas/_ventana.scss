@@ -1,0 +1,116 @@
+// ==========================================
+// ESTILOS GENERALES DE LAS VENTANAS
+// ==========================================
+
+.ventana_proyecto {
+    box-sizing: border-box;
+
+    position: fixed;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    //display: flex;
+    flex-direction: column;
+
+    width: 90%;
+    height: 80%;
+
+    background-color: #202020;
+
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    border-radius: 10px;
+
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.50);
+
+    overflow: hidden;
+
+    z-index: 800;
+}
+
+
+// BOX-SIZING PARA TODO LO QUE ESTÉ ADENTRO
+
+.ventana_proyecto * {
+    box-sizing: border-box;
+}
+
+
+// ==========================================
+// BARRA SUPERIOR
+// ==========================================
+
+.proyecto_barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: 40px;
+
+    flex-shrink: 0;
+
+    background-color: #181818;
+}
+
+
+// ==========================================
+// NOMBRE
+// ==========================================
+
+.proyecto_barra_nombre {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    padding-left: 15px;
+
+    color: white;
+
+    font-size: 13px;
+}
+
+
+// ==========================================
+// CONTROLES
+// ==========================================
+
+.proyecto_controles {
+    display: flex;
+
+    height: 100%;
+}
+
+.proyecto_controles button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 45px;
+    height: 100%;
+
+    background: transparent;
+
+    border: none;
+
+    color: white;
+
+    cursor: pointer;
+
+    transition: background-color 0.15s ease;
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.10);
+    }
+}
+
+
+// ==========================================
+// BOTÓN CERRAR
+// ==========================================
+
+.proyecto_cerrar:hover {
+    background-color: #c42b1c !important;
+}

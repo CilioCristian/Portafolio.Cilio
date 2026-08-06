@@ -14,10 +14,15 @@
 @use "ventanas/chrome";
 @use "ventanas/explorador";
 @use "ventanas/cv";
+@use "ventanas/proyecto";
 /*utilidades*/
 @use "utilidades/animaciones";
 /*menu inicio*/
-@use "menu_inicio/menu-inicio";
+@use "menu-inicio/menu-inicio";
+@use "menu-inicio/menu-inicio-iconos";
+@use "menu-inicio/menu-inicio-busqueda";
+@use "menu-inicio/menu-inicio-lateral";
+
 
 *{
     margin: 0;

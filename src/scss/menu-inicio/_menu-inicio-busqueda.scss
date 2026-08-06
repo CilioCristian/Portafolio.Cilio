@@ -1,0 +1,36 @@
+// ==============================
+// BUSCADOR
+// ==============================
+
+.menu_inicio_busqueda {
+    display: flex;
+    align-items: center;
+
+    width: 90%;
+    height: 40px;
+
+    margin: 25px auto 0;
+    padding: 0 15px;
+
+    background-color: rgba(255, 255, 255, 0.08);
+
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    border-radius: 6px;
+
+    color: white;
+}
+
+
+// ICONO
+
+.menu_inicio_busqueda i {
+    margin-right: 12px;
+}
+
+
+// TEXTO
+
+.menu_inicio_busqueda span {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.75);
+}

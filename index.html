@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="./src/css/style.css">
+
     <!-- Animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Portafolio | Cristian Cilio</title>
 </head>
 
@@ -39,35 +42,340 @@
 
         </section>
     </main>
-    <!-- ================= MENÚ INICIO ================= -->
 
-<section class="menu_inicio">
+
+
+    <!-- ================= MENÚ INICIO ================= -->
+    <section class="menu_inicio">
 
     <!-- PANEL PRINCIPAL 70% -->
     <div class="menu_inicio_principal">
 
-        <!-- Buscador -->
-        <div class="menu_inicio_busqueda">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <span>Search</span>
-        </div>
+    <!-- ================= BUSCADOR ================= -->
+    <div class="menu_inicio_busqueda">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <span>Search</span>
+    </div>
 
-        <!-- Apps -->
-        <div class="menu_inicio_apps">
-            <!-- después ponemos las aplicaciones -->
-        </div>
+
+    <!-- ================= CONTENIDO CON SCROLL ================= -->
+    <div class="menu_inicio_contenido">
+
+
+        <!-- ================= PINNED / PROYECTOS ================= -->
+        <section class="menu_seccion">
+
+            <div class="menu_inicio_titulo">
+                <h3>Proyectos</h3>
+                <span>Show all ></span>
+            </div>
+
+            <div class="apps_grid">
+
+                <div class="app_inicio proyecto_inicio" data-proyecto="onlyplast">
+                    <img 
+                        src="./src/images/Proyectos/catalogo-onlyplast.png"     alt="Catálogo Onlyplast">
+                        <span>Onlyplast</span>
+                </div>
+
+                <div class="app_inicio">
+                    <img src="./src/assets/iconos/proyectos.png" alt="Proyecto">
+                    <span>Proyecto 2</span>
+                </div>
+
+                <div class="app_inicio">
+                    <img src="./src/assets/iconos/proyectos.png" alt="Proyecto">
+                    <span>Proyecto 3</span>
+                </div>
+
+                <div class="app_inicio">
+                    <img src="./src/assets/iconos/proyectos.png" alt="Proyecto">
+                    <span>Proyecto 4</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= RECOMMENDED / TECNOLOGÍAS ================= -->
+        <section class="menu_seccion">
+
+            <div class="menu_inicio_titulo">
+                <h3>Recommended</h3>
+            </div>
+
+            <div class="apps_grid">
+
+                <div class="app_inicio">
+                    <img src="./src/assets/iconos/html.png" alt="HTML">
+                    <span>HTML</span>
+                </div>
+
+                <div class="app_inicio">
+                    <img src="./src/assets/iconos/css.png" alt="CSS">
+                    <span>CSS</span>
+                </div>
+
+                <div class="app_inicio">
+                    <img src="./src/assets/iconos/javascript.png" alt="JavaScript">
+                    <span>JavaScript</span>
+                </div>
+
+                <div class="app_inicio">
+                    <img src="./src/assets/iconos/sass.png" alt="Sass">
+                    <span>Sass</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ALL ================= -->
+        <section class="menu_seccion">
+
+            <div class="menu_inicio_titulo">
+                <h3>All</h3>
+            </div>
+
+            <div class="apps_grid">
+
+                <div class="app_inicio">
+                    <img src="./src/assets/iconos/git.png" alt="Git">
+                    <span>Git</span>
+                </div>
+
+                <div class="app_inicio">
+                    <img src="./src/assets/iconos/github.png" alt="GitHub">
+                    <span>GitHub</span>
+                </div>
+
+                <div class="app_inicio">
+                    <img src="./src/assets/iconos/estudios.png" alt="Estudios">
+                    <span>Estudios</span>
+                </div>
+
+                <div class="app_inicio">
+                    <img src="./src/assets/iconos/cursos.png" alt="Cursos">
+                    <span>Cursos</span>
+                </div>
+
+            </div>
+
+        </section>
 
     </div>
 
+    </div>
 
     <!-- PANEL LATERAL 30% -->
     <div class="menu_inicio_lateral">
 
-        <!-- después ponemos el contenido lateral -->
+    <!-- PERFIL -->
+    <div class="menu_perfil">
+
+        <div class="menu_perfil_avatar">
+            <i class="fa-solid fa-user"></i>
+        </div>
+
+        <span class="menu_perfil_nombre">Cristian Cilio</span>
+        <span class="menu_perfil_rol">Web Developer</span>
 
     </div>
 
-</section>
+
+    <!-- CONTACTO -->
+    <div class="menu_contacto">
+
+        <span class="menu_contacto_titulo">Contact</span>
+
+        <div class="menu_contacto_item">
+            <i class="fa-brands fa-linkedin"></i>
+            <span>LinkedIn</span>
+        </div>
+
+        <div class="menu_contacto_item">
+            <i class="fa-brands fa-github"></i>
+            <span>GitHub</span>
+        </div>
+
+        <div class="menu_contacto_item">
+            <i class="fa-brands fa-instagram"></i>
+            <span>Instagram</span>
+        </div>
+
+        <div class="menu_contacto_item">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>WhatsApp</span>
+        </div>
+
+        <div class="menu_contacto_item">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Email</span>
+        </div>
+
+    </div>
+
+
+    <!-- CV -->
+    <div class="menu_cv">
+
+        <div class="menu_contacto_item">
+            <i class="fa-solid fa-file-lines"></i>
+            <span>Currículum</span>
+        </div>
+
+    </div>
+
+</div>
+
+    </section>
+
+
+
+
+<!-- ========================================= -->
+<!-- VENTANA DE PROYECTO -->
+<!-- ========================================= -->
+
+    <section class="ventana_proyecto">
+
+    <!-- BARRA SUPERIOR -->
+    <div class="proyecto_barra">
+
+        <div class="proyecto_barra_nombre">
+            <i class="fa-solid fa-code"></i>
+            <span>Onlyplast</span>
+        </div>
+
+        <div class="proyecto_controles">
+            <button class="proyecto_minimizar">
+                <i class="fa-solid fa-minus"></i>
+            </button>
+
+            <button class="proyecto_maximizar">
+                <i class="fa-regular fa-square"></i>
+            </button>
+
+            <button class="proyecto_cerrar">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+    </div>
+
+
+    <!-- =================CUERPO =================-->
+    <div class="proyecto_cuerpo">
+
+    <!-- ========================================= -->
+    <!-- IZQUIERDA: PROYECTO FUNCIONANDO -->
+    <!-- ========================================= -->
+
+    <div class="proyecto_preview">
+
+        <iframe
+            class="proyecto_iframe"
+            src="https://ciliocristian.github.io/Catalogo_Onlyplast/"
+            title="Vista previa del proyecto">
+        </iframe>
+
+    </div>
+
+
+    <!-- ========================================= -->
+    <!-- DERECHA: INFORMACIÓN -->
+    <!-- ========================================= -->
+
+    <div class="proyecto_info">
+
+
+        <!-- CONTENIDO -->
+
+        <div class="proyecto_info_contenido">
+
+            <h2>Catálogo Onlyplast</h2>
+
+            <p>
+                Sitio web desarrollado como proyecto durante mi formación
+                en desarrollo web.
+            </p>
+
+
+            <h3>Objetivo</h3>
+
+            <p>
+                Crear un catálogo web responsive para organizar y mostrar
+                diferentes categorías de productos de Onlyplast.
+            </p>
+
+
+            <h3>Tecnologías</h3>
+
+            <div class="proyecto_tecnologias">
+
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>SCSS</span>
+                <span>Bootstrap</span>
+                <span>Git</span>
+                <span>GitHub</span>
+
+            </div>
+
+
+            <h3>Características</h3>
+
+            <p>
+                Diseño responsive, navegación entre categorías,
+                organización mediante componentes y estructura de estilos
+                desarrollada con Sass.
+            </p>
+
+
+            <h3>Qué aprendí</h3>
+
+            <p>
+                Este proyecto me permitió aplicar estructura semántica con HTML,
+                diseño responsive, Sass, Bootstrap, control de versiones con Git
+                y publicación de proyectos mediante GitHub.
+            </p>
+
+        </div>
+
+
+        <!-- ========================================= -->
+        <!-- GITHUB - FIJO ABAJO A LA DERECHA -->
+        <!-- ========================================= -->
+
+        <div class="proyecto_github">
+
+            <a
+                href="https://github.com/CilioCristian/Catalogo_Onlyplast"
+                target="_blank"
+                rel="noopener noreferrer">
+
+                <i class="fa-brands fa-github"></i>
+
+                Ver código en GitHub
+
+            </a>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+    </div>
+
+    </section>
+
+
+
+
     <!-- ================= BARRA DE TAREAS ================= -->
     <footer class="barra_inferior">
         <!-- ================= BARRA INFERIOR IZQUIERDA ================= -->
@@ -92,10 +400,20 @@
             <button class="boton-windows"> <img src="./src/images/windows.png" alt="icon-windows"></button>
 
             <div class="boton_busqueda">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <span>Search</span>
-                <img class="busqueda_tigre" alt="Tigre">
-            </div>
+
+    <div class="busqueda_lupa">
+        <img src="./src/images/lupa.png" alt="Buscar">
+    </div>
+
+    <div class="busqueda_texto">
+        <span>Search</span>
+    </div>
+
+    <div class="busqueda_tigre"> <!-- ACA HAY QUE INTEGRAR UNA API PARA QUE CAMBIE DE ANIMALES-->
+        <img src="./src/images/tigre.png" alt="Tigre">
+    </div>
+
+</div>
             
             <button class="boton-copilot"> <img src="./src/images/copilot.png" alt="icon-copilot"></button>
             <button class="boton-chrome"> <img src="./src/images/chrome.png" alt="icon-chrome"></button>

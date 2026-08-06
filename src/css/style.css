@@ -49,102 +49,108 @@
   gap: 12px;
 }
 
-/*PRIMER BOTON */ /*PRIMER BOTON */ /*PRIMER BOTON */ /*PRIMER BOTON */ /*PRIMER BOTON */
 .boton-windows {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
   height: 90%;
+  background: transparent;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+.boton-windows:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .boton-windows img {
-  height: 90%;
+  height: 80%;
   width: auto;
+  object-fit: contain;
 }
 
-/*SEGUNDO BOTON */ /*SEGUNDO BOTON */ /*SEGUNDO BOTON */ /*SEGUNDO BOTON */ /*SEGUNDO BOTON */
-/*CONTENEDOR BOTON_BUSQUEDA */ /*CONTENEDOR BOTON_BUSQUEDA */
 .boton_busqueda {
   display: flex;
   align-items: center;
-  height: 90%;
   width: 260px;
+  height: 90%;
+  background-color: white;
   border-radius: 999px;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+.boton_busqueda:hover {
+  background-color: #f0f0f0;
 }
 
-/*PRIMERA PARTE DEL BOTON */ /*PRIMERA PARTE DEL BOTON */
 .busqueda_lupa {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 40px;
-  height: 80%;
+  height: 100%;
 }
 
 .busqueda_lupa img {
-  height: 150%;
-  width: 120%;
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
 }
 
-/*SEGUNDA PARTE DEL BOTON */ /*SEGUNDA PARTE DEL BOTON */
 .busqueda_texto {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex: 1;
   height: 100%;
 }
 
-/*TERCERA PARTE DEL BOTON */ /*TERCERA PARTE DEL BOTON */
+.busqueda_texto span {
+  font-size: 14px;
+  color: #202020;
+}
+
 .busqueda_tigre {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 40px;
   height: 100%;
 }
 
 .busqueda_tigre img {
-  height: 110%;
-  width: 110%;
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
 }
 
-/*TERCER BOTON, EL DE CHROME*/ /*TERCER BOTON, EL DE CHROME*/
-.boton-chrome {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 90%;
-  width: 50px;
-}
-
-.boton-chrome img {
-  height: 80%;
-  width: auto;
-}
-
-/*CUARTO BOTON, EL DE CARPETA*/ /*CUARTO BOTON, EL DE CARPETA*/
-.boton-carpeta {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 90%;
-  width: 50px;
-}
-
-.boton-carpeta img {
-  height: 80%;
-  width: auto;
-}
-
-/*QUINTO BOTON, EL DE COPILOT*/
+.boton-chrome,
+.boton-carpeta,
 .boton-copilot {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90%;
   width: 50px;
+  height: 90%;
+  background: transparent;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+.boton-chrome:hover,
+.boton-carpeta:hover,
+.boton-copilot:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
+.boton-chrome img,
+.boton-carpeta img,
 .boton-copilot img {
   height: 80%;
   width: auto;
+  object-fit: contain;
 }
 
 .barra_inferior_izquierda {

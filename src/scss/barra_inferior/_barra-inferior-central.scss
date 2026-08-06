@@ -1,97 +1,163 @@
-.barra_inferior_central{
+// ==========================================
+// BARRA INFERIOR CENTRAL
+// ==========================================
+
+.barra_inferior_central {
     padding-left: 10px;
     padding-right: 10px;
     gap: 12px;
-    
 }
-/*PRIMER BOTON *//*PRIMER BOTON *//*PRIMER BOTON *//*PRIMER BOTON *//*PRIMER BOTON */
-.boton-windows{
-    height: 90%;
-}
-.boton-windows img{
-    height: 90%;
-    width: auto;
-    
-}
-/*SEGUNDO BOTON *//*SEGUNDO BOTON *//*SEGUNDO BOTON *//*SEGUNDO BOTON *//*SEGUNDO BOTON */
 
-/*CONTENEDOR BOTON_BUSQUEDA *//*CONTENEDOR BOTON_BUSQUEDA */
-.boton_busqueda{
+
+// ==========================================
+// WINDOWS
+// ==========================================
+
+.boton-windows {
     display: flex;
+    justify-content: center;
     align-items: center;
+
+    width: 50px;
     height: 90%;
-    width: 260px;
-    border-radius: 999px;
+
+    background: transparent;
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    transition: background-color 0.15s ease;
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.10);
+    }
 }
-/*PRIMERA PARTE DEL BOTON *//*PRIMERA PARTE DEL BOTON */
-.busqueda_lupa{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
+
+.boton-windows img {
     height: 80%;
+    width: auto;
+
+    object-fit: contain;
 }
-.busqueda_lupa img{
-    height: 150%;
-    width: 120%;
+
+
+// ==========================================
+// BUSCADOR
+// ==========================================
+
+.boton_busqueda {
+    display: flex;
+    align-items: center;
+
+    width: 260px;
+    height: 90%;
+
+    background-color: white;
+    border-radius: 999px;
+
+    cursor: pointer;
+
+    transition: background-color 0.15s ease;
+
+    &:hover {
+        background-color: #f0f0f0;
+    }
 }
-/*SEGUNDA PARTE DEL BOTON *//*SEGUNDA PARTE DEL BOTON */
-.busqueda_texto{
+
+
+// LUPA
+
+.busqueda_lupa {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    width: 40px;
+    height: 100%;
+}
+
+.busqueda_lupa img {
+    width: 20px;
+    height: 20px;
+
+    object-fit: contain;
+}
+
+
+// TEXTO SEARCH
+
+.busqueda_texto {
+    display: flex;
+    align-items: center;
+
     flex: 1;
     height: 100%;
-    
 }
-/*TERCERA PARTE DEL BOTON *//*TERCERA PARTE DEL BOTON */
-.busqueda_tigre{
+
+.busqueda_texto span {
+    font-size: 14px;
+    color: #202020;
+}
+
+
+// TIGRE
+
+.busqueda_tigre {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    width: 40px;
     height: 100%;
-
 }
-.busqueda_tigre img{
-    height: 110%;
-    width: 110%;
 
+.busqueda_tigre img {
+    width: 24px;
+    height: 24px;
+
+    object-fit: contain;
 }
-/*TERCER BOTON, EL DE CHROME*//*TERCER BOTON, EL DE CHROME*/
-.boton-chrome{
+
+
+// ==========================================
+// BOTONES DE APLICACIONES
+// Chrome + Carpeta + Copilot
+// ==========================================
+
+.boton-chrome,
+.boton-carpeta,
+.boton-copilot {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90%;
+
     width: 50px;
+    height: 90%;
+
+    background: transparent;
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    transition: background-color 0.15s ease;
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.10);
+    }
 }
-.boton-chrome img{
+
+
+// ==========================================
+// IMÁGENES DE APLICACIONES
+// ==========================================
+
+.boton-chrome img,
+.boton-carpeta img,
+.boton-copilot img {
     height: 80%;
     width: auto;
 
-}
-/*CUARTO BOTON, EL DE CARPETA*//*CUARTO BOTON, EL DE CARPETA*/
-.boton-carpeta{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 90%;
-    width: 50px;
-
-}
-.boton-carpeta img{
-    height: 80%;
-    width: auto;
-}
-/*QUINTO BOTON, EL DE COPILOT*/
-.boton-copilot{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 90%;
-    width: 50px;
-}
-.boton-copilot img{
-    height: 80%;
-    width: auto;
+    object-fit: contain;
 }
